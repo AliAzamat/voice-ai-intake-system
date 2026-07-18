@@ -1,0 +1,22 @@
+[
+  {
+    "transcript": "Hi, this is Dana Reed, my number is 415-555-0182, calling because my furnace died overnight and it's freezing.",
+    "expected": {
+      "full_name": "Dana Reed",
+      "callback_number": "4155550182",
+      "reason": "furnace died overnight",
+      "urgency": "high",
+      "preferred_time": null
+    }
+  },
+  {
+    "transcript": "Yeah hi, I was hoping someone could call me back sometime next week about a quote, no rush at all.",
+    "expected": {
+      "full_name": null,
+      "callback_number": null,
+      "reason": "quote",
+      "urgency": "low",
+      "preferred_time": "next week"
+    }
+  }
+]
