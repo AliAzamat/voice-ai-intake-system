@@ -1,8 +1,6 @@
 # Voice AI Intake System
 
-An advanced, end-to-end voice intake pipeline. A telephony provider posts a call webhook; you transcribe the recording with Whisper, extract structured intake fields with an LLM, validate the model's output against a strict schema, persist it, and surface it in a prioritized human-review queue. Then you harden the pipeline with guardrails (idempotency, PII redaction, retries), evaluate extraction quality against a labeled gold set, and ship it behind a typed Fastify service ready to deploy. TypeScript, Whisper STT, LLM structured extraction, and webhook-driven processing throughout.
-
-Built step-by-step with [KhwajaLabs Build](https://khwajalabs.com).
+An advanced, end-to-end voice intake pipeline. A telephony provider posts a call webhook; the recording is transcribed with Whisper, structured intake fields are extracted with an LLM, the model's output validated against a strict schema, persisted and surfaced in a prioritized human-review queue. Then the pipeline hardened with guardrails (idempotency, PII redaction, retries), extraction quality evaluated against a labeled gold set, and shipped behind a typed Fastify service ready to deploy. TypeScript, Whisper STT, LLM structured extraction, and webhook-driven processing throughout.
 
 ## Stack
 - TypeScript
